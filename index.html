@@ -4,24 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container1 p-0 m-0 bg-dark" style="height: 450px;">
-        <div class="d-flex text-light justify-content-between">
+<body style="display: flex; flex-direction: column">
+    <div class="container1 p-0 m-0 bg-dark" style="height: 550px;">
+        <div class="item1 d-flex text-light justify-content-between">
             <div class="left d-flex mx-5 p-3">
-                <a class="bg-dark" href="#">
+                <a class="bg-dark" href="https://github.com/Keyur1284/odin-landing-page" target="_blank">
                     <img src="./images/logo.png" alt="Logo" width="85px" height="85px">
                 </a>
             </div>
             <div class="right d-flex gap-3 me-3" style="padding: 30px;">
-                <div class="option">About</div>
-                <div class="option">Shop</div>
-                <div class="option">Contact</div>
+                <div class="option"><a href="https://github.com/Keyur1284" class="text-white" target="_blank">My Profile</a></div>
+                <div class="option"><a href="https://getvetco.com/" class="text-white" target="_blank">Shop</a></div>
+                <div class="option"><a href="https://www.linkedin.com/in/keyur-govrani-b94277237/" class="text-white" target="_blank">Contact Us</a></div>
             </div>
         </div>
+        <div class="item2 d-flex justify-content-center align-items-center text-white gap-3" style="height: 400px;">
+            <div class="text text-wrap" style="width: 350px">
+                <div class="h1">This is the landing page of dog store.</div>
+                <div class="p-1">You can buy all dog products from our shop. We sell the best quality products.</div>
+                <a href="https://getvetco.com/" target="_blank"><button class="btn btn-primary mt-2">Shop Now</button></a>
+            </div>
+            <div class="image">
+                <img src="./images/husky.jpg" alt="husky" width="450px" height="250px">
+            </div>
+        </div>
+    </div>
+    <div class="container2 d-flex flex-column p-2 mt-2" style="height: 400px;">
+        <div class="heading h3 d-flex justify-content-center p-2">Different breeds of dogs</div>
+        <div class="images d-flex flex-wrap justify-content-center gap-5">
+            <div class="item1">
+                <div class="border border-primary border-4 rounded"><img src="./images/dog1.jpg" alt="dog1" width="200px" height="200px"></div>
+                <div class="text p-2" style="width: 200px;">The Golden Retriever is a Scottish breed of retriever dog of medium size.</div>
+            </div>
+            <div class="item1">
+                <div class="border border-primary border-4 rounded"><img src="./images/dog2.jpg" alt="dog2" width="200px" height="200px"></div>
+                <div class="text p-2" style="width: 200px;">The beagle is a breed of small scent hound, similar in appearance to the much larger foxhound.</div>
+            </div>
+            <div class="item1">
+                <div class="border border-primary border-4 rounded"><img src="./images/dog3.jpg" alt="dog3" width="200px" height="200px"></div>
+                <div class="text p-2" style="width: 200px;">The Pomeranian is a perky and bold toy dog breed with a long coat and distinctive neck.</div>
+            </div>
+            <div class="item1">
+                <div class="border border-primary border-4 rounded"><img src="./images/dog4.jpg" alt="dog4" width="200px" height="200px"></div>
+                <div class="text p-2" style="width: 200px;">With their comical face and hilarious personalities, pugs are the jesters of the canine world.</div>
+            </div>
+        </div>
+    </div>
+    <div class="quotes container3 d-flex flex-column mt-4 justify-content-center" style="height: 200px; background-color: #dee2e6;">
+        <figure class="text">
+        <blockquote class="display-4 mt-3 ms-4">
+            <p>“Money can buy you a fine dog, but only love can make him wag his tail.”</p>
+          </blockquote>
+          </figure>
+          <figure class="text-end">
+          <figcaption class="blockquote-footer" style="margin-right: 350px; font-size: 20px;">
+            Kinky Friedman
+          </figcaption>
+        </figure>
+    </div>
+    <div class="container bg-primary d-flex justify-content-evenly align-items-center rounded p-3 mt-5" style="height: 100px;">
+        <div class="left text-white">
+            <div class="h6">What are your waiting for? Sign up and Shop now!!</div>
+            <div style="color: #ced4da;">Click on the shop option after signing up.</div>
+        </div>
+        <div class="right text-white">
+            <button class="btn btn-light">Sign up</button>
+        </div>
+    </div>
+    <div class="container4 bg-dark mt-4 text-white d-flex justify-content-center align-items-center" style="height: 50px;">
+        <div>Copyright © Keyur Govrani 2022</div>
     </div>
 </body>
 </html>
